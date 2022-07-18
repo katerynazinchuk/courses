@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system;
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      h1 {
+        color: #232629;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 35px;
+      }
+      h2 {
+        color: #0a95ff;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      h3 {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 400;
+        color: #232629;
+      }
+
+      h4 {
+        font-weight: 700;
+      }
+      .header {
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto 0;
+        padding: 10px;
+        position: fixed;
+        background: white;
+        top: 0;
+        box-shadow: 0 1px 4px lightgrey;
+      }
+      .logo {
+        margin-left: 0;
+        padding: 0;
+        vertical-align: baseline;
+        width: 150px;
+        height: 30px;
+        margin-top: -4px;
+        display: inline-block;
+        box-sizing: border-box;
+        background-position: 0 -500px;
+        background-image: url(https://cdn.sstatic.net/Img/unified/sprites.svg?v=fcc0ea44ba27);
+      }
+      .mainNav {
+        position: fixed;
+        padding: 70px 10px 20px 10px;
+        width: 164px;
+        top: 0;
+        left: 0;
+        max-height: 100vh;
+      }
+      .mailNavList {
+        border-bottom: 300px;
+      }
+      .mainNavP {
+        background: white;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px;
+      }
+      main {
+        position: relative;
+        margin: auto;
+        display: block;
+        width: calc(100% - 350px);
+        padding: 50px;
+        box-sizing: border-box;
+        font: inherit;
+        font-size: 100%;
+      }
+      .mainAside {
+        position: fixed;
+        box-sizing: border-box;
+        width: 330px;
+        max-height: 100%;
+        right: 0;
+        padding: 12px 15px;
+      }
+      .yellowTable {
+        padding: 20px 20px;
+        background: #fdf7e2;
+        box-shadow: 2px 0 4px lightgrey;
+        border-radius: 5px;
+        width: 250px;
+      }
+      .secondTable {
+        margin-top: 15px;
+        padding: 20px 20px;
+        box-shadow: 2px 0 4px lightgrey;
+        border-radius: 5px;
+        background: white;
+        width: 250px;
+      }
+      .main {
+        width: 600px;
+      }
+      footer {
+        position: absolute;
+        background: hsl(210, 8%, 15%);
+        max-width: 1264px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 12px 12px 12px;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .footerLogo {
+        background-image: ;
+        font-size: large;
+        font-weight: 700;
+        font-family: system-ui;
+      }
+      .footerColl {
+        display: inline-block;
+      }
+      .footerLinksList {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 400;
+      }
+      .footerA {
+        color: hsl(210, 8%, 75%);
+        text-decoration: none;
+        font-family: system-ui;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <span class="logo"></span>
+        <a href="">About</a>
+        <a href="">Products</a>
+        <a href="">For Teams</a>
+        <form>
+          <input type="search" placeholder="search" value="[html]" />
+          <button class="logIn">Log in</button>
+          <button class="signUp">Sign up</button>
+        </form>
+      </div>
+    </header>
+    <aside>
+      <nav class="mainNav">
+        <div class="mailNavList">
+          <h3>
+            <a href="">Home</a>
+          </h3>
+          <h3>
+            <a href="">PUBLIC</a>
+          </h3>
+          <div class="publicNavList">
+            <a href="">QUestions</a>
+            <a href="">Tags</a>
+            <a href="">Users</a>
+            <a href="">Companies</a>
+          </div>
+          <h3>COLLECTIVES</h3>
+          <a href="">Explore Collectives</a>
+          <h3>TEAMS</h3>
+        </div>
+        <div class="mainNavP">
+          <p class="pNav">
+            <strong class="">Stack Overflow for Teams</strong>
+            – Start collaborating and sharing organizational knowledge.
+          </p>
+          <img
+            class=""
+            width=""
+            height=""
+            src="https://cdn.sstatic.net/Img/teams/teams-illo-free-sidebar-promo.svg?v=47faa659a05e"
+            alt="advertising"
+          />
+          <div>
+            <button>Create a free Team</button>
+          </div>
+          <a href="">Why Teams?</a>
+        </div>
+      </nav>
+    </aside>
+    <main class="content">
+      <aside class="mainAside">
+        <div class="yellowTable">
+          <h3>The Overflow Blog</h3>
+          <a href="">Why Perl is still relevant in 2022</a>
+          <a href=""
+            >Skills that pay the bills for software developers (Ep. 460)</a
+          >
+          <h3>Featured on Meta</h3>
+          <a href="">Testing new traffic management tool</a>
+          <a href="">Duplicated votes are being cleaned up</a>
+          <a href="">Trending: A new answer sorting option</a>
+          <a href=""
+            >Updated button styling for vote arrows: currently in A/B testing</a
+          >
+        </div>
+        <div class="secondTable">
+          <h3>Collectives</h3>
+          <a href="">see all</a>
+          <div>
+            <h3>
+              <span class="logoSmall"></span>
+              <a href="">Intel</a>
+              <small> 5k members </small>
+            </h3>
+            <p>
+              A space for developers to collaborate on Intel software tools,
+              libraries, and resources. Share knowledge and connect with Intel
+              product experts. Find the information you need to drive innovation
+              and simplify development from edge to cloud with Intel.
+            </p>
+            <button>Join</button>
+          </div>
+          <div>
+            <h3>
+              <span class="logoSmall"></span>
+              <a href="">Twilio</a>
+              <small>3k members</small>
+            </h3>
+            <p>
+              Twilio has democratized channels like voice, text, chat, video,
+              and email by virtualizing the world’s communications
+              infrastructure through APIs that are simple enough for any
+              developer, yet robust enough to power the world’s most demanding
+              applications.
+            </p>
+            <button>Join</button>
+          </div>
+          <div>
+            <h3>
+              <span class="logoSmall"></span>
+              <a href="">WSO2</a>
+              <small> 545 members </small>
+            </h3>
+            <p>
+              WSO2 solutions give enterprises the flexibility to deploy
+              applications and services on-premises, on private or public
+              clouds, or in hybrid environments. Our collective aims to enable
+              developers to build value-added services and get to market faster.
+            </p>
+            <button>Join</button>
+          </div>
+        </div>
+      </aside>
+      <section class="main">
+        <h1>All Questions</h1>
+        <button>Ask Question</button>
+        <div>22,762,455 questions</div>
+        <div class="articleNavigation">
+          <a href="">Newest</a>
+          <a href="">Active</a>
+          <a href="">More</a>
+        </div>
+        <button>Filter</button>
+        ::after
+        <article class="article">
+          <h2>Rotating an object around the origin</h2>
+          <p>
+            With NumberAnimation, I can rotate a 3d object around one of its x,
+            y, or I axes. I need to rotate the object around the origin - in the
+            picture it is Z. enter image description here ...
+          </p>
+          <div class="articleTags">
+            <a href="">qt</a>
+            <a href="">model</a>
+            <a href="">rotation</a>
+            <a href="">qml</a>
+            <a href="">qt3d</a>
+          </div>
+          <a class="author" href="">Vladimir </a>
+          <span> 1 asked</span>
+          <time> 1 min ago</time>
+          <aside class="articleAside">
+            <div>0 votes</div>
+            <div>0 answers</div>
+            <div>2 views</div>
+          </aside>
+        </article>
+        <article class="article">
+          <h2>
+            Values from Express request query (query string) is percent-encoded
+          </h2>
+          <p>
+            I'm using Express for my API. When I send request like this:
+            http://localhost/resource?offer=20% discount This is what
+            request.query looks like: { badge: '20%%20discount' } I tried to
+            decode it ...
+          </p>
+          <div class="articleTags">
+            <a href="">node.js</a>
+            <a href="">express</a>
+          </div>
+          <a class="author" href="">Positivity</a>
+          <span> 4,524 asked</span>
+          <time> 1 min ago</time>
+          <aside class="articleAside">
+            <div>0 votes</div>
+            <div>0 answers</div>
+            <div>3 views</div>
+          </aside>
+        </article>
+        <article class="article">
+          <h2>How to add a link in mermaid websequence diagram</h2>
+          <p>
+            I have a mermaid websequence diagram snippet in jekyll blog
+            ```mermaid sequenceDiagram actor User participant ABC
+            User-&gt;&gt;ABC: Hello &lt;-- i want this to be a hyperlink to a
+            section ...
+          </p>
+          <div class="articleTags">
+            <a href="">jekyll</a>
+            <a href="">mermaid</a>
+          </div>
+          <a class="author" href="">Da_Vicki</a>
+          <span> 49 asked</span>
+          <time> 1 min ago</time>
+          <aside class="articleAside">
+            <div>0 votes</div>
+            <div>0 answers</div>
+            <div>2 views</div>
+          </aside>
+        </article>
+        <article class="article">
+          <h2>
+            Robot frame work Input text : Element is not currently interactable
+            and may not be manipulated
+          </h2>
+          <p>
+            I am using chrome and trying to input end date to this field. Tried
+            this wait until element is visible ${contract_end_date} timeout=50s
+            input text xpath=(//*[@name="terminatedMerchant....
+          </p>
+          <div class="articleTags">
+            <a href="">robotframework</a>
+          </div>
+          <a class="author" href="">Swathi Yeragudipati</a>
+          <span> 1 asked</span>
+          <time> 1 min ago</time>
+          <aside class="articleAside">
+            <div>0 votes</div>
+            <div>0 answers</div>
+            <div>2 views</div>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span class="footerLogo">Footer Logo</span>
+      <div class="footerColl">
+        <h4>
+          <a class="footerA" href="">STACK OVERFLOW</a>
+        </h4>
+        <div class="footerLinksList">
+          <a class="footerA" href="">Questions</a>
+          <a class="footerA" href="">Help</a>
+        </div>
+      </div>
+      <div class="footerColl">
+        <h4>
+          <a class="footerA" href="">PRODUCTS</a>
+        </h4>
+        <div class="footerLinksList">
+          <a class="footerA" href="">Teams</a>
+          <a class="footerA" href="">Advertising</a>
+          <a class="footerA" href="">Collectives</a>
+          <a class="footerA" href="">Talent</a>
+        </div>
+      </div>
+      <div class="footerColl">
+        <h4>
+          <a class="footerA" href="">COMPANY</a>
+        </h4>
+        <div class="footerLinksList">
+          <a class="footerA" href="">About</a>
+          <a class="footerA" href="">Press</a>
+          <a class="footerA" href="">Work Here</a>
+          <a class="footerA" href="">Legal</a>
+          <a class="footerA" href="">Privacy Policy</a>
+          <a class="footerA" href="">Terms of Service</a>
+          <a class="footerA" href="">Contact Us</a>
+          <a class="footerA" href="">Cookie Settings</a>
+          <a class="footerA" href="">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footerColl">
+        <h4>
+          <a class="footerA" href="">STACK EXCHANE NETWORK</a>
+        </h4>
+        <div class="footerLinksList">
+          <a class="footerA" href="">Technology</a>
+          <a class="footerA" href="">Culture & recreation</a>
+          <a class="footerA" href="">Life & arts</a>
+          <a class="footerA" href="">Science</a>
+          <a class="footerA" href="">Professional</a>
+          <a class="footerA" href="">Business</a>
+        </div>
+      </div>
+      <div>
+        <a class="footerA" href="">Cookie Settings</a>
+        <a class="footerA" href="">Cookie Policy</a>
+      </div>
+      <div>
+        <a class="footerA" href="">Blog</a>
+        <a class="footerA" href="">Facebook</a>
+        <a class="footerA" href="">Twitter</a>
+        <a class="footerA" href="">LinkedIn</a>
+        <a class="footerA" href="">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>
