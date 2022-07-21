@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="the-new-york-times-styles.css" />
     <script type="module">
       import handlebars from "https://cdn.skypack.dev/handlebars";
-      // import data from "./the-new-york-times_refactored.js";
-      const data = await (await fetch("/the-new-york-times_refactored.json")).json();
+
+      const data = await (
+        await fetch("/the-new-york-times_refactored.json")
+      ).json();
 
       const templateSrc = await (
         await fetch("/the-new-york-times_refactored.hbs")
