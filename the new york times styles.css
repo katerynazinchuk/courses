@@ -1,0 +1,125 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-content: start;
+    column-gap: 32px;
+    row-gap: 20px;
+}
+.header {
+    grid-column: 1/12;
+    text-align: center;
+}
+.h1 {
+    display: block;
+    border-bottom: 1px solid #e7e6e6;
+    margin: 4px 0 4px;
+    padding: 0 0 5px;
+}
+.itemNav {
+    grid-column: 1/12;
+    text-align: center;
+    padding: 5px 0 8px;
+    border-bottom: 1px solid currentColor;
+}
+/**/
+.line {
+    grid-column: 1/9;
+    height: 2px;
+    max-resolution: 0;
+    border-bottom: 1px solid currentColor;
+}
+.line1_9 {
+    grid-column: 1/9;
+}
+.line1_9Light {
+    grid-column: 1/9;
+}
+.line1_4 {
+    grid-column: 1/4;
+}
+.line1_4Light {
+    grid-column: 1/4;
+}
+/**/
+.navigation {
+    padding: 7px;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Helvetica;
+    color: #232629;
+}
+.itemMain {
+    grid-column: 1/8;
+    border-bottom: 1px solid currentColor;
+}
+.itemAside {
+    grid-column: 8/12;
+    grid-rows: 1/30;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+    align-content: start;
+}
+.line1_9 {
+    grid-column: 1/9;
+}
+.line1_9light {
+    grid-column: 1/9;
+}
+.mainArticle1_4 {
+    grid-column: 1/4;
+    padding: 0;
+    margin: 0;
+}
+.sideArticle {
+    grid-column: 4/9;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-size: 22px;
+    font-family: "Times New Roman";
+}
+h4 {
+    font-size: 16px;
+    font-family: "Times New Roman";
+}
+.containerAside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-content: start;
+}
+.itemAsideFoto {
+    grid-column: 1/3;
+}
+.itemAsideColum {
+    grid-column: 1fr;
+}
+.mainNavigation {
+    grid-column: 1/9;
+    border-top: 1px solid currentColor;
+    padding: 10px;
+}
+.articleHeader {
+    padding-top: 15px;
+    border-top: 1px solid #e7e6e6;
+}
+.main1_5 {
+    grid-column: 1/5;
+    padding: 0;
+}
+.main5_9 {
+    grid-column: 5/9;
+    padding: 0 0 0 35px;
+    border-left: 1px solid #e7e6e6;
+}
+</style>
