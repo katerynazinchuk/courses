@@ -4,6 +4,43 @@
     <meta charset="UTF-8" />
     <title>The New York Times</title>
     <link rel="stylesheet" href="the-new-york-times-styles.css" />
+    <style>
+      .subSection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+
+      .subSection h3 {
+        font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+        font-size: 1.125rem;
+        line-height: 1.2em;
+        color: #5a5a5a;
+      }
+      .subSection a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      .subSection > * {
+        position: relative;
+      }
+
+      .subSection > *:last-child::after {
+        display: none;
+      }
+
+      .subSection > *::after {
+        content: "";
+        display: block;
+        top: 5px;
+        bottom: 5px;
+        width: 1px;
+        background: rgba(128, 128, 128, 0.98);
+        position: absolute;
+        right: calc(-1 * (32px + 1px) / 2);
+      }
+    </style>
     <script type="module">
       import handlebars from "https://cdn.skypack.dev/handlebars";
 
