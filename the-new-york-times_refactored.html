@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The New York Times</title>
+    <link rel="stylesheet" href="the-new-york-times-styles.css" />
+    <script type="module">
+      import handlebars from "https://cdn.skypack.dev/handlebars";
+      // import data from "./the-new-york-times_refactored.js";
+      const data = await (await fetch("/the-new-york-times_refactored.json")).json();
+
+      const templateSrc = await (
+        await fetch("/the-new-york-times_refactored.hbs")
+      ).text();
+
+      const template = handlebars.compile(templateSrc);
+
+      document.body.innerHTML = template(data);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,111 @@
+{
+  "localizations": [
+    { "language": "U.S.", "url": "https://the-newyork-times/us/" },
+    { "language": "International", "url": "/" },
+    { "language": "Canada", "url": "/" },
+    { "language": "Español", "url": "/" },
+    { "language": "中文", "url": "/" }
+  ],
+  "sections": [
+    {
+      "mainImg": {
+        "url": "https://static01.nyt.com/images/2022/07/21/us/politics/21dc-biden-covid-hfo1/merlin_210350985_b67bce81-7b14-46aa-89c6-4b1fe5b4648a-threeByTwoMediumAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+        "alt": "blah blah"
+      },
+      "subSections": [
+        {
+          "title": "This is what the subvariant of Omicron known as BA.5 could mean for the United States.",
+          "url": "/"
+        },
+        {
+          "title": "This is what the subvariant of Omicron known as BA.5 could mean for the United States.",
+          "url": "/"
+        },
+        {
+          "title": "This is what the subvariant of Omicron known as BA.5 could mean for the United States.",
+          "url": "/"
+        }
+      ],
+
+      "articles": [
+        {
+          "primary": true,
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’",
+          "body": "<ul class=\"css-ypax4q\"><li class=\"summary-class\">The diagnosis for the 79-year-old president underscored how the virus remained a persistent threat in a country trying to put the pandemic in the past.</li><li class=\"summary-class\">Mr. Biden is receiving Paxlovid, an anti-viral drug used to minimize the severity of Covid-19, the White House said. Get pandemic news.</li></ul>"
+        },
+        {
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’"
+        }
+      ]
+    },
+    {
+      "mainImg": {
+        "url": "https://static01.nyt.com/images/2022/07/21/multimedia/21Cheney-HP2/21Cheney-HP2-threeByTwoMediumAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+        "alt": "blah blah"
+      },
+      "articles": [
+        {
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’"
+        },
+        {
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’"
+        },
+        {
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’"
+        }
+      ]
+    },
+
+    {
+      "mainImg": {
+        "url": "https://static01.nyt.com/images/2022/07/21/us/politics/21dc-contraception/21dc-contraception-threeByTwoMediumAt2X-v3.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+        "alt": "blah blah"
+      },
+      "articles": [
+        {
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’"
+        },
+        {
+          "title": "President Biden Tests Positive for the Coronavirus With ‘Mild Symptoms’"
+        }
+      ]
+    }
+  ],
+
+  "navigation": [
+    "World",
+    "U.S.",
+    "Politics",
+    "N.Y.",
+    "Business",
+    "Opinion",
+    "Tech",
+    "Science",
+    "Health",
+    "Sports",
+    "Arts",
+    "Books",
+    "Style",
+    "Food",
+    "Travel",
+    "Magazine",
+    "T Magazine",
+    "Real Estate",
+    "Video"
+  ],
+  "articles": {
+    "heroArticle": {
+      "title": "E.U. Nations Are Asked to Immediately Start Rationing Natural Gas",
+      "body": "<ul>\n            <li>\n              Warning of possible further disruptions to Russian fuel exports,\n              the European Union is asking members to adopt a strict energy\n              consumption plan. The plan would solidify the sense that\n            </li>\n            <li>\n              Europe’s economy is on a war footing with Russia, and would need\n              the backing of national governments. Follow updates.\n            </li>\n          </ul>"
+    },
+
+    "heroSubArticle": [
+      {
+        "title": "President Vladimir Putin signaled that Russian gas would resume in a key pipeline but at a reduced level."
+      },
+      {
+        "title": "In Iran, President Vladimir Putin has found a new ally to help push back against ostracism from the West."
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+<div class="container1">
+  <header class="header">
+    <span>
+      {{#each localizations}}
+        <a href="{{url}}" class="navigation">{{language}}</a>
+      {{/each}}
+    </span>
+    <h1 class="h1">The New York Time</h1>
+    <section>
+      <nav class="itemNav">
+        {{#each navigation}}
+          <a href="#" class="navigation">{{this}}</a>
+        {{/each}}
+      </nav>
+      <div class="line"></div>
+    </section>
+  </header>
+  <main style="grid-column: 1/9">
+    {{#each sections}}
+      <section
+        style=" display: grid; gap: 1em; grid-template-columns: 3fr 5fr; margin: 1em 0;"
+      >
+        <div>
+          {{#each articles}}
+              <article>
+                <h2 style="
+                    {{#if primary }}
+                        font-size: 22px;
+                    {{else}}
+                        font-size: 16px;
+                    {{/if}}
+                "
+                >{{title}}</h2>
+                {{{body}}}
+              </article>
+          {{/each}}
+        </div>
+        <img
+          style="max-width: 100%;"
+          src="{{mainImg.url}}"
+          alt="{{mainImg.alt}}"
+        />
+      </section>
+
+        {{#if subSections }}
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px">
+                {{#each subSections}}
+                    <h3><a href="{{url}}">{{title}}</a></h3>
+                {{/each}}
+            </div>
+        {{/if}}
+    {{/each}}
+  </main>
+</div>
