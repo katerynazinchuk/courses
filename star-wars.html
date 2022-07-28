@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Star wars!</title>
+    <script type="module">
+      import doMyMagic from "./utils.js";
+
+      document.body.innerHTML = await doMyMagic(
+        "/star-wars.hbs",
+        "https://swapi.dev/api/people?search=s&page=1"
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
